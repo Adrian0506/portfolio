@@ -1,0 +1,156 @@
+.nav {
+    position: fixed;
+    display: inline;
+    list-style-type: none;
+   float: left;
+    background-color: var(--main-gray);
+     padding: 1rem;
+     width: 100%;
+     top: -20px;
+    left: 0px;
+    z-index: 10;
+    opacity: 0.9;
+}
+:root {
+    --main-red: #be3144;
+    --main-gray: #303841;
+
+}
+
+body {
+    background-color: var(--main-red) !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+html {
+    scroll-behavior: smooth;
+}
+li {
+    display: inline;
+    float: left;
+    position: relative;
+    align-self: center;
+    text-decoration: none;
+    left:40rem;
+}
+
+a:hover {
+    animation-name: fades;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+a {
+    display: block;
+    padding: 15px;
+    background-color: none;
+    text-decoration: none;
+    color:white;
+}
+
+
+@keyframes fades {
+    50% {
+        background-color: #be3144;
+
+    }
+}
+
+.image {
+    position: relative !important;
+    left: -40rem !important;
+}
+.contact {
+  position: relative;
+  left:200px;
+ top: 200rem; 
+}
+
+.skills {
+    position: relative;
+    top:80rem;
+    left: 52rem;
+    font-family: Sriracha;
+    font-size: 100px;
+    color:white
+    
+}
+.about {
+    position: relative;
+    left:35rem;
+    top:20rem;
+    color: white;
+    font-family: Sriracha;
+    font-size: 80px;
+}
+
+
+.text {
+    position: relative;
+    left:52rem;
+    top:15rem;
+    font-family: Quicksand;
+}
+
+.arrow {
+    position: relative;
+    left:58rem;
+    top:15rem;
+  padding: 15px;
+  display: inline;
+}
+
+.arrow:hover {
+    animation-name: fading;
+    animation-duration: 2s;
+}
+
+.skillsInfo {
+    position: relative;
+    left:38rem;
+    top:75rem;
+    font-family: Quicksand;
+}
+
+@keyframes fading {
+    50% {
+        background-color: var(--main-gray)
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1.index-h1 {
+    max-width: 55%;
+    overflow: hidden;
+    }
+ }
+
+
+ .worked {
+     position: relative;
+     top:75rem;
+     color:white;
+     padding: 5px;
+    }
+
+ .JavaScript {
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 4px 1px;
+    padding: 10px;
+    color: white;
+ } 
+
+ .mySql {
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 4px 1px;
+    padding: 10px;
+    color: white;
+    position: relative;
+ }
+
+ .JavaScript:hover {
+     animation-name: fading;
+     animation-duration: 2s;
+ }
